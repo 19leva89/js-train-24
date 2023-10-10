@@ -10,9 +10,9 @@ function task6() {
 		setImmediate(() => {
 			const randomValue = Math.random();
 
-			// Якщо випадкове число менше 0.5, резолвимо проміс з рядком Більше ніж 0.5.
+			// Якщо випадкове число більше 0.5, резолвимо проміс з рядком Більше ніж 0.5.
 			// Інакше відхиляемо проміс з рядком Менше ніж 0.5 .
-			if (randomValue < 0.5) {
+			if (randomValue > 0.5) {
 				resolve(`Більше ніж 0.5: ${randomValue}`);
 			} else {
 				reject(`Менше ніж 0.5: ${randomValue}`);
